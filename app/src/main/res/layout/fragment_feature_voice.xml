@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorOnBackground"
+    android:padding="24dp"
+    tools:context=".ui.features.VoiceFragment">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Voice Command"
+        android:textAppearance="?attr/textAppearanceHeadlineMedium"
+        android:textColor="?attr/colorOnSurface"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- This card holds the result -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardResult"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="32dp"
+        app:cardBackgroundColor="?attr/colorSurface"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:strokeColor="?attr/colorPrimary"
+        app:strokeWidth="1dp">
+
+        <TextView
+            android:id="@+id/tvRecognizedText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Your command will appear here"
+            android:textAppearance="?attr/textAppearanceTitleMedium"
+            android:textColor="?attr/colorOnSurface" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Floating Action Button for Mic -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnMic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/ic_voice"
+        app:backgroundTint="?attr/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardResult"
+        app:maxImageSize="32dp"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/tvListeningStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Tap to speak"
+        android:textAppearance="?attr/textAppearanceBodyLarge"
+        android:textColor="?attr/colorOnSurface"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnMic" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

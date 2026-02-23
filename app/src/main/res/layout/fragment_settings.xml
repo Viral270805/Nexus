@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="?attr/colorOnBackground"
+    tools:context=".ui.profile.SettingsFragment">
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/switchDarkMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dark Mode"
+        android:textColor="?attr/colorOnSurface"
+        android:textAppearance="?attr/textAppearanceTitleMedium"
+        android:padding="8dp"/> <!-- This line was corrected -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="More settings coming soon..."
+        android:gravity="center"
+        android:textColor="?attr/colorOnSurface"
+        android:textAppearance="?attr/textAppearanceBodyLarge" />
+
+</LinearLayout>
