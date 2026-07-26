@@ -3,59 +3,42 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/nav_dashboard_fragment"> <!-- This tells it to load your dashboard first -->
+    app:startDestination="@id/nav_dashboard_fragment">
 
-    <!-- Dashboard (Home) Fragment -->
     <fragment
         android:id="@+id/nav_dashboard_fragment"
         android:name="com.example.nexus.ui.dashboard.DashboardFragment"
         android:label="Dashboard"
         tools:layout="@layout/fragment_dashboard" />
 
-    <!-- Profile Fragment -->
-    <fragment
-        android:id="@+id/nav_profile"
-        android:name="com.example.nexus.ui.profile.ProfileFragment"
-        android:label="Profile"
-        tools:layout="@layout/fragment_profile" /> <!-- TYPO WAS HERE -->
-
-    <!-- Settings Fragment -->
-    <fragment
-        android:id="@+id/nav_settings"
-        android:name="com.example.nexus.ui.profile.SettingsFragment"
-        android:label="Settings"
-        tools:layout="@layout/fragment_settings" />
-
-    <!-- ALL YOUR FEATURE FRAGMENTS -->
     <fragment
         android:id="@+id/nav_voice"
-        android:name="com.example.nexus.ui.features.VoiceFragment"
+        android:name="com.example.nexus.ui.features.VoiceCommandFragment"
         android:label="Voice Command"
-        tools:layout="@layout/fragment_feature_voice" />
-    <fragment
-        android:id="@+id/nav_appliance"
-        android:name="com.example.nexus.ui.features.ApplianceFragment"
-        android:label="Appliance Control"
-        tools:layout="@layout/fragment_feature_appliance" />
-    <fragment
-        android:id="@+id/nav_automation"
-        android:name="com.example.nexus.ui.features.AutomationFragment"
-        android:label="Automation"
-        tools:layout="@layout/fragment_feature_automation" />
+        tools:layout="@layout/fragment_voice_command" />
+
     <fragment
         android:id="@+id/nav_camera"
-        android:name="com.example.nexus.ui.features.CameraFragment"
+        android:name="com.example.nexus.ui.features.LiveCameraFragment"
         android:label="Live Camera"
-        tools:layout="@layout/fragment_feature_camera" />
+        tools:layout="@layout/fragment_live_camera" />
+
     <fragment
-        android:id="@+id/nav_security"
-        android:name="com.example.nexus.ui.features.SecurityFragment"
-        android:label="Security Alerts"
-        tools:layout="@layout/fragment_feature_security" />
+        android:id="@+id/nav_alerts"
+        android:name="com.example.nexus.ui.features.AlertHistoryFragment"
+        android:label="Alert History"
+        tools:layout="@layout/fragment_alert_history" />
+
     <fragment
         android:id="@+id/nav_logs"
-        android:name="com.example.nexus.ui.features.LogsFragment"
-        android:label="Logs"
-        tools:layout="@layout/fragment_feature_logs" />
+        android:name="com.example.nexus.ui.features.ActivityLogsFragment"
+        android:label="Activity Logs"
+        tools:layout="@layout/fragment_activity_logs" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.nexus.ui.settings.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
 
 </navigation>

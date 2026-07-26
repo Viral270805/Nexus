@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "445493236820",
+    "project_id": "nexus-db28c",
+    "storage_bucket": "nexus-db28c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:445493236820:android:e93633efe854860d6c09c1",
+        "android_client_info": {
+          "package_name": "com.example.nexus"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5qmx6qVUSRO8WcjT4fNeuUks-P2ZCVRE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

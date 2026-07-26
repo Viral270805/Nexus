@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background_black"
     android:padding="24dp"
-    tools:context=".auth.LoginActivity"
-    tools:theme="@style/Theme.Nexus.Auth">
+    tools:context=".auth.LoginActivity">
 
     <ImageView
         android:id="@+id/ivLogo"
@@ -15,18 +15,17 @@
         android:layout_marginTop="60dp"
         android:src="@drawable/ic_nexus_logo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.519"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:tint="@color/md_theme_primary" />
+        app:tint="@color/primary_text" />
 
     <TextView
         android:id="@+id/tvLoginTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="@string/login"
-        android:textColor="@color/white"
+        android:text="Login"
+        android:textColor="@color/primary_text"
         android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,7 +37,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Welcome back to Nexus"
-        android:textColor="@color/white"
+        android:textColor="@color/secondary_text"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -50,10 +49,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:hint="@string/email"
-        android:textColorHint="@color/white"
-        app:boxStrokeColor="@color/md_theme_primary"
-        app:hintTextColor="@color/md_theme_primary"
+        android:hint="Email"
+        android:textColorHint="@color/secondary_text"
+        app:boxStrokeColor="@color/primary_text"
+        app:hintTextColor="@color/primary_text"
         app:layout_constraintTop_toBottomOf="@id/tvLoginSubtitle">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -61,7 +60,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
-            android:textColor="@color/white" />
+            android:textColor="@color/primary_text" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -70,20 +69,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:hint="@string/password"
-        android:textColorHint="@color/white"
-        app:boxStrokeColor="@color/md_theme_primary"
-        app:hintTextColor="@color/md_theme_primary"
+        android:hint="Password"
+        android:textColorHint="@color/secondary_text"
+        app:boxStrokeColor="@color/primary_text"
+        app:hintTextColor="@color/primary_text"
         app:layout_constraintTop_toBottomOf="@id/tilEmail"
         app:passwordToggleEnabled="true"
-        app:passwordToggleTint="@color/md_theme_primary">
+        app:passwordToggleTint="@color/primary_text">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
-            android:textColor="@color/white" />
+            android:textColor="@color/primary_text" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
@@ -91,8 +90,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="@string/forgot_password"
-        android:textColor="@color/md_theme_primary"
+        android:text="Forgot Password?"
+        android:textColor="@color/primary_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tilPassword" />
 
@@ -102,9 +101,9 @@
         android:layout_height="56dp"
         android:layout_marginTop="32dp"
         android:background="@drawable/gradient_button_background"
-        android:text="@string/login"
+        android:text="Login"
         android:textAllCaps="false"
-        android:textColor="@color/white"
+        android:textColor="@color/background_black"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@id/tvForgotPassword" />
@@ -114,8 +113,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
-        android:text="@string/dont_have_account"
-        android:textColor="@color/white"
+        android:text="Don't have an account? Sign Up"
+        android:textColor="@color/secondary_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

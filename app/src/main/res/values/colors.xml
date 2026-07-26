@@ -1,31 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Primary Color Palette -->
-    <color name="md_theme_primary">#2196F3</color>
-    <color name="md_theme_onPrimary">#FFFFFF</color>
-    <color name="md_theme_primaryContainer">#BBDEFB</color>
-    <color name="md_theme_onPrimaryContainer">#0D47A1</color>
+    <color name="background_black">#0a0a0a</color>
+    <color name="surface_dark">#121212</color>
+    <color name="surface_variant">#1e1e1e</color>
+    <color name="card_border">#2a2a2a</color>
+    <color name="primary_text">#ffffff</color>
+    <color name="secondary_text">#888888</color>
+    <color name="red_alert">#ff4444</color>
+    <color name="green_success">#44cc66</color>
+    <color name="blue_gesture">#4488ff</color>
+    <color name="yellow_voice">#ffcc00</color>
+    <color name="divider_color">#1a1a1a</color>
 
-    <!-- Secondary Color Palette -->
-    <color name="md_theme_secondary">#0D47A1</color>
-    <color name="md_theme_onSecondary">#FFFFFF</color>
-    <color name="md_theme_secondaryContainer">#E3F2FD</color>
-    <color name="md_theme_onSecondaryContainer">#0D47A1</color>
-
-    <!-- Backgrounds (Light) -->
-    <color name="md_theme_background">#F5F5F5</color>
-    <color name="md_theme_onBackground">#1A1C1E</color>
-    <color name="md_theme_surface">#FFFFFF</color>
-    <color name="md_theme_onSurface">#1A1C1E</color>
-
-    <!-- Dark Mode Specific Colors (Now in the main file) -->
-    <color name="md_theme_dark_background">#121212</color>
-    <color name="md_theme_dark_onBackground">#E0E0E0</color>
-    <color name="md_theme_dark_surface">#1E1E1E</color>
-    <color name="md_theme_dark_onSurface">#FFFFFF</color>
-
-    <!-- Other -->
+    <!-- Compatibility with standard names -->
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
-    <color name="grey">#9E9E9E</color>
 </resources>

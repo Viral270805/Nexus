@@ -1,38 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="200dp"
-    android:background="@drawable/nav_header_background"
-    android:gravity="bottom"
+    android:layout_height="wrap_content"
+    android:background="@color/background_black"
     android:orientation="vertical"
-    android:padding="16dp"
-    android:theme="@style/ThemeOverlay.AppCompat.Dark">
-
-    <!-- Use ShapeableImageView for a circular profile image -->
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/ivProfileImage"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:src="@drawable/ic_profile_placeholder"
-        app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Circular"
-        app:strokeColor="?attr/colorPrimary"
-        app:strokeWidth="2dp" />
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp"
+    android:paddingTop="64dp"
+    android:paddingBottom="32dp">
 
     <TextView
-        android:id="@+id/tvUserName"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="8dp"
-        android:text="Demo User"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@color/white"
+        android:letterSpacing="0.2"
+        android:text="NEXUS"
+        android:textColor="@color/primary_text"
+        android:textSize="32sp"
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/tvLocation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/location_loading"
-        android:textColor="@color/white" />
+        android:text="Smart Patient Monitor"
+        android:textColor="@color/secondary_text"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:id="@+id/layoutNavStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/dotNavStatus"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/status_dot_grey" />
+
+        <TextView
+            android:id="@+id/tvNavStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="System Offline"
+            android:textColor="@color/secondary_text"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/divider_color" />
+
 </LinearLayout>

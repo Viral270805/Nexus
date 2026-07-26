@@ -1,48 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Nexus" parent="Theme.Material3.DayNight">
-        <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/md_theme_primary</item>
-        <item name="colorOnPrimary">@color/md_theme_onPrimary</item>
-        <item name="colorPrimaryContainer">@color/md_theme_primaryContainer</item>
-        <item name="colorOnPrimaryContainer">@color/md_theme_onPrimaryContainer</item>
-        <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/md_theme_secondary</item>
-        <item name="colorOnSecondary">@color/md_theme_onSecondary</item>
-        <item name="colorSecondaryContainer">@color/md_theme_secondaryContainer</item>
-        <!-- This line is now corrected -->
-        <item name="colorOnSecondaryContainer">@color/md_theme_onSecondaryContainer</item>
-        <!-- Background color. -->
-        <item name="android:colorBackground">@color/md_theme_background</item>
-        <item name="colorOnBackground">@color/md_theme_onBackground</item>
-        <item name="colorSurface">@color/md_theme_surface</item>
-        <item name="colorOnSurface">@color/md_theme_onSurface</item>
-        <!-- Status bar color. -->
-        <item name="android:statusBarColor">@color/md_theme_primary</item>
+    <style name="Theme.Nexus" parent="Theme.Material3.Dark">
+        <item name="colorPrimary">@color/primary_text</item>
+        <item name="colorOnPrimary">@color/background_black</item>
+        <item name="colorSecondary">@color/secondary_text</item>
+        <item name="android:colorBackground">@color/background_black</item>
+        <item name="colorSurface">@color/surface_dark</item>
+        <item name="colorSurfaceVariant">@color/surface_variant</item>
+        <item name="colorOnSurface">@color/primary_text</item>
+        <item name="android:statusBarColor">@color/background_black</item>
+        <item name="android:navigationBarColor">@color/background_black</item>
     </style>
 
-    <!-- Splash Screen Theme (This is the classic one we need) -->
-    <style name="Theme.Nexus.Splash" parent="Theme.Material3.Dark">
-        <item name="android:windowBackground">@drawable/splash_background</item>
-        <item name="android:statusBarColor" tools:targetApi="l">@android:color/transparent</item>
-        <item name="android:navigationBarColor" tools:targetApi="l">@android:color/transparent</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowActionBar">false</item>
-    </style>
-
-    <!-- Auth Screens Theme (Fullscreen, Dark) -->
-    <style name="Theme.Nexus.Auth" parent="Theme.Material3.Dark">
-        <item name="android:statusBarColor">@color/md_theme_dark_background</item>
-        <!-- This line is now corrected -->
-        <item name="android:windowBackground">@color/md_theme_dark_background</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowActionBar">false</item>
-    </style>
-
-    <!-- Main App Theme with No ActionBar (for Dashboard) -->
-    <style name="Theme.Nexus.NoActionBar" parent="Theme.Nexus">
+    <style name="Theme.Nexus.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Nexus.Splash" parent="Theme.Material3.Dark">
+        <item name="android:windowBackground">@color/background_black</item>
+        <item name="android:statusBarColor">@color/background_black</item>
+        <item name="android:navigationBarColor">@color/background_black</item>
     </style>
 </resources>
